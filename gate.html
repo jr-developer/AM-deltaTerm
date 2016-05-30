@@ -1,0 +1,281 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.2.0-alpha.1.min.css">
+<link href="css/deltaStyles.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.2.0-alpha.1.min.js"></script>
+<script src="js/contact.js"></script>
+<style>
+.wrap {
+	white-space: normal !important;
+}
+</style>
+<title>Aeromexico International Gate</title>
+</head>
+
+<body>
+<div data-role="page">
+  <div data-role="header">
+    <h1>Delta</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="dlterm_1.html" data-role="button" data-transition="slide">Tkt-Counter</a></li>
+        <li><a href="gate.html" data-role="button" data-transition="slide">Gate</a></li>
+        <li><a href="arrival.html" data-role="button" data-transition="slide">Arrival</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- /header -->
+  <div data-role="content">
+    <div data-role="content"> <img src="pictures/am_gris_final.jpg">
+      <p>AeroMexico Procedures.</p>
+      <br />
+      <div class="drop_bags" data-role="collapsible-set" data-inset="true">
+        <div data-role="collapsible">
+          <h3>Prep-Flight</h3>
+          <ul data-role="listview" data-inset="true">
+            <li data-role="list-divider">
+              <h3>Print Reports</h3>
+            </li>
+            <li>
+              <p class="orange wrap">Meal count</p>
+              <p class="wrap"><span class="term">PMP&lt;AM Flight #&gt;/&lt;Date&gt;SFO-B</span></p>
+              <p class="wrap"><span class="term">CPY</span></p>
+              <p class="orange wrap">SSR List</p>
+              <p class="wrap"><span class="term">AFSD*</span></p>
+              <p class="wrap"><span class="term">CPY</span></p>
+              <p class="orange wrap">Unseated PAX List</p>
+              <p class="wrap"><span class="term">A*RN</span></p>
+              <p class="wrap"><span class="term">CPY</span></p>
+              <p class="orange wrap">Reserved Seats List</p>
+              <p class="wrap"><span class="term">A*R-RS</span></p>
+              <p class="wrap"><span class="term">CPY</span></p>
+              <p class="orange wrap">Check-In Passenger List</p>
+              <p class="wrap"><span class="term">A*R-CI</span></p>
+              <p class="wrap"><span class="term">CPY</span></p>
+              <p class="orange wrap">Connecting Passenger List</p>
+              <p class="wrap"><span class="term">A*KI-N/ALL</span></p>
+              <p class="wrap"><span class="term">CPY</span></p>
+            </li>
+            
+            <li data-role="list-divider">
+              <h3>Block & Unblock Seats</h3>
+            </li>
+            <li>
+            <p class="orange wrap">Unblock Seats</p>
+              <p class="wrap"><span class="term">APVDX&lt;City Pair&gt;&lt;Seat #&gt;</span></p>
+              <p class="orange wrap">Block Seats</p>
+              <p class="wrap"><span class="term">APVAX&lt;City Pair&gt;&lt;Seat #&gt;</span></p>
+            </li>
+            
+            <li data-role="list-divider">
+              <h3>Passenger ID</h3>
+            </li>
+            <li>
+            <p class="orange wrap">Pax ID</p>
+              <p class="wrap"><span class="term">PID*</span></p>
+            </li>
+          </ul>
+        </div>
+        <!-- /collapsible -->
+        
+        <div class="drop_bags" data-role="collapsible" >
+          <h3>Primary</h3>
+          <ul data-role="listview" data-inset="true">
+            <li data-role="list-divider">
+              <h3>Assign Primary or Secondary</h3>
+            </li>
+            <li>
+              <p class="orange wrap">To Assign primary</p>
+              <p class="wrap"><span class="term">AQRA-P &lt;Computer Address&gt;</span></p>
+              <p class="orange wrap">To Assign Secondary</p>
+              <p class="wrap"><span class="term">AQRA-S &lt;Computer Address&gt;</span></p>
+              <p class="orange wrap">To Assign More than one Secondary</p>
+              <p class="wrap"><span class="term">AQRA-S &lt;Computer Address&gt;/&lt;Computer Address&gt;/&lt;Computer Address&gt;</span></p>
+            </li>
+            <li data-role="list-divider">
+              <h3>Delete Primary or Secondary</h3>
+            </li>
+            <li>
+              <p class="orange wrap">To Delete primary</p>
+              <p class="wrap"><span class="term">AQRD-P &lt;Computer Address&gt;</span></p>
+              <p class="orange wrap">To Delete Secondary</p>
+              <p class="wrap"><span class="term">AQRD-S &lt;Computer Address&gt;</span></p>
+            </li>
+            
+            <li data-role="list-divider">
+              <h3>Take Control</h3>
+            </li>
+            <li>
+              <p class="orange wrap">To Take Control</p>
+              <p class="wrap"><span class="term">AQRA-CG/BP</span></p>
+              <p class="orange wrap">Primary Prep Paperwork</p>
+              <p class="wrap"><span class="term">AFAP*</span></p>
+              <p class="orange wrap">Total of Passengers not on Board</p>
+              <p class="wrap"><span class="term">A*R-CI</span></p>
+              <p class="orange wrap">Total of Passengers on Board with out bags</p>
+              <p class="wrap"><span class="term">AIB*OFF</span></p>
+              <p class="orange wrap">Connecting Passengers</p>
+              <p class="wrap"><span class="term">A*KI-N</span></p>
+              <p class="orange wrap">to display HK list</p>
+              <p class="wrap"><span class="term">A*L</span></p>
+              <p class="orange wrap">Meal Count</p>
+              <p class="wrap"><span class="term">A*T</span></p>
+              <p class="orange wrap">Get Passenger BCN</p>
+              <p class="wrap"><span class="term">AIB*-&lt;Seat #&gt;</span></p>
+              <p class="orange wrap">Manual Boarding</p>
+              <p class="wrap"><span class="term">A@OE-&lt;#&gt;</span></p>
+              <p class="orange wrap">To clear a seat</p>
+              <p class="wrap"><span class="term">A@C-I$&lt;Seat#&gt;</span></p>
+              <p class="orange wrap">Release Reserved Seats</p>
+              <p class="wrap"><span class="term">A*R-RS</span></p>
+              <p class="orange wrap">To remove a Seat to Segment 1 Name 1</p>
+              <p class="wrap"><span class="term">A*S1&yen;V1.1$@</span></p>
+            </li>
+          </ul>
+        </div>
+        <!-- /collapsible -->
+        
+        
+        <div data-role="collapsible">
+          <h3>Boarding</h3>
+          <ul data-role="listview" data-inset="true">
+            <li data-role="list-divider">
+              <h3>Boarding</h3>
+            </li>
+            <li>
+              <p class="orange wrap">Announcements</p>
+              <br>
+              <p class="wrap"><a data-role="button" href="#ann_Normal">Normal Flight</a></p>
+              <p class="wrap"><a data-role="button" href="#ann_Contigo">Contigo Flight</a></p>
+            </li>
+          </ul>
+        </div>
+        <!-- /collapsible -->
+        
+        <div class="drop_bags" data-role="collapsible" >
+          <h3>Final Paperwork</h3>
+          <ul data-role="listview" data-inset="true">
+            <li data-role="list-divider">
+              <h3>Final Paperwork</h3>
+            </li>
+            <li>
+              <p class="orange wrap">To be Placed on Envelope</p>
+              <p class="wrap"><span class="term">A*R-ON</span></p>
+              <p class="orange wrap">2nd To be handle with the rest</p>
+              <p class="wrap"><span class="term">A*R-ON</span></p>
+              <p class="orange wrap">Final Paperwork</p>
+              <p class="wrap"><span class="term">AFAD</span></p>
+              <p class="orange wrap">Passports report</p>
+              <p class="wrap"><span class="term">PSP*</span></p>
+              <p class="orange wrap">?</p>
+              <p class="wrap"><span class="term">AIB*-ON</span></p>
+              <p class="orange wrap">Number of Bags</p>
+              <p class="wrap"><span class="term">AB*-STAT</span></p>
+              <p class="orange wrap">To Close a flight</p>
+              <p class="wrap"><span class="term">A*D&lt;Flight #&gt;&lt;Date&gt;SFO-CLY</span></p>
+            </li>
+          </ul>
+        </div>
+        <!-- /collapsible --> 
+        
+      </div>
+      <!-- /collapsible-set --> 
+    </div>
+    <!-- /content -->
+    
+    <div data-role="footer">
+      <h4>SFO, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dep. 125</h4>
+    </div>
+    <!-- /footer --> 
+  </div>
+  <!--content--> 
+</div>
+<!-- /page -->
+
+<div id="ann_Contigo" data-role="page">
+  <div data-role="content">
+  <h3>Announcements</h3>
+    <div data-role="collapsible-set" data-inset="true">
+      <div class="drop_bags" data-role="collapsible" >
+        <h2> Pre-Boarding </h2>
+        <ul data-role="listview" data-inset="true">
+          <li>
+            <h1 class="green">Espa&ntilde;ol</h1>
+            <p class="wrap anuncio">Pasajeros de AeroMexico, vuelo<span> _______ </span> con destino a la ciudad de <span> __________ </span> vamos a empezar a pre-abordar aquellas personas que necesiten asistencia para abordar y personas que viajen con ni&ntilde;os menores de 2 a&ntilde;os. Los demas pasajeros favor de permanecer sentados muchas gracias</p>
+          </li>
+          <li>
+            <h4 class="red">English</h4>
+            <p class="wrap anuncio">Aeromexico Passengers flight<span> _________ </span>to<span> __________ </span>we are going to start our pre-boarding process with passengers that need assistance to board, and passengers with infants in arms.</p>
+          </li>
+        </ul>
+      </div>
+      <!--colapsible-->
+      
+      <div class="drop_bags" data-role="collapsible" >
+        <h2>Boarding</h2>
+        <ul data-role="listview" data-inset="true">
+          <li data-role="list-divider">
+            <h3 >Boarding A/F</h3>
+          </li>
+          <li>
+            <h4 class="green">Espa&ntilde;ol</h4>
+            <p class="wrap anuncio">Gracias por esperar, empezamos el abordaje con los pasajeros con asientos de ventana, letras <strong>A y F grupo A y F,</strong> por favor cada pasajero con pasaporte y pase de abordar en mano, incluso los menores de edad.</p>
+          </li>
+          <li>
+            <h4 class="red">English</h4>
+            <p class="wrap anuncio">Thank you for waiting, we are starting our boarding process with passengers with a window seats, letters <strong>A and F group A and F</strong> please have your passport and boarding pass on hand.</p>
+          </li>
+          <li data-role="list-divider">
+            <h2>Boarding B/E</h2>
+          </li>
+          <li>
+            <h4 class="green">Espa&ntilde;ol</h4>
+            <p class="wrap anuncio">Continuamos el abordaje con los pasajeros con asientos de ventana, letras <strong>B y E grupo B y E,</strong> por favor cada pasajero con pasaporte y pase de abordar en mano, incluso los menores de edad.</p>
+          </li>
+          <li>
+            <h4 class="red">English</h4>
+            <p class="wrap anuncio">We continue our boarding process with passengers with a window seats, letters <strong>B and E group B and E</strong> please have your passport and boarding pass on hand.</p>
+          </li>
+          <li data-role="list-divider">
+            <h2>Boarding C/D</h2>
+          </li>
+          <li>
+            <h4 class="green">Espa&ntilde;ol</h4>
+            <p class="wrap anuncio">Continuamos el abordaje con los pasajeros con asientos de ventana, letras <strong>C y D grupo C y D,</strong> por favor cada pasajero con pasaporte y pase de abordar en mano, incluso los menores de edad.</p>
+          </li>
+          <li>
+            <h4 class="red">English</h4>
+            <p class="wrap anuncio">We continue our boarding process with passengers with a window seats, letters <strong>C and D group C and D</strong> please have your passport and boarding pass on hand.</p>
+          </li>
+        </ul>
+      </div>
+      <!--colapsible--> 
+    </div>
+    <!--colapsible-set--> 
+  </div>
+  <!-- content-->
+  <div data-role="footer">
+    <h4>SFO, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dep. 125</h4>
+  </div>
+  <!-- /footer --> 
+</div>
+</div>
+<!--ann_Contigo page-->
+
+<div id="ann_Normal" data-role="page">
+<div data-role="content">
+  <h1>Normal Fight page</h1>
+</div>
+<!-- ann_Normal page-->
+<div>
+<!-- content -->
+<div data-role="footer">
+  <h4>SFO, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dep. 125</h4>
+</div>
+<!-- /footer -->
+</body>
+</html>
