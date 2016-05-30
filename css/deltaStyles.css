@@ -1,0 +1,243 @@
+#home.ui-page.ui-body-c.ui-page-active{ background:#3c291b url(../pictures/_2130255.jpg) no-repeat 50% 0px;}
+
+.ui-header.ui-bar-a{background:#009 url(../pictures/Delta_Chevron.png) no-repeat 2px 4px;}
+
+.ui-header.ui-bar-a h1{
+
+	font-size:40px;
+
+	text-transform: uppercase;
+
+	letter-spacing: .2em;
+
+}
+
+.ui-header .ui-title{margin:0.1em 0.15em; padding-left:70px;}
+
+div.drop_bags div.ui-collapsible-content ul li span{font-size:14px; color:#009}
+div.drop_bags div.ui-collapsible-content ul li span.term{font-size:.9em; font-weight:bold; color:#900;padding-left:10px}
+
+.ui-li-aside{width:80%}
+
+#bagroom-title{background:url(../pictures/bagroom.png) no-repeat} 
+
+#bagroom-title h1{height:100px; margin-bottom:15px; text-align:right; padding-right:20px; margin:0}
+
+#ramp-title{background:url(../pictures/ramp.jpg) no-repeat} 
+
+#ramp-title h1{height:100px; margin-bottom:15px; text-align:right; padding-right:20px; margin:0}
+
+#designators div table {
+
+	background-color:#C5C6FE;
+
+	border: 2px solid #009;
+
+	border-collapse: separate;
+
+	border-left: 0;
+
+	border-radius: 15px;
+
+	border-spacing: 0px;
+
+	-webkit-box-shadow:  4px 5px 8px 4px rgba(30, 20, 69, .4);   
+
+    box-shadow:  4px 5px 8px 4px rgba(30, 20, 69, .4);
+
+}
+
+
+
+#designators thead {
+
+  display: table-header-group;
+
+  vertical-align: middle;
+
+  border-color: inherit;
+
+  border-collapse: separate;
+
+}
+
+
+
+#designators tr {
+
+display: table-row;
+
+vertical-align: inherit;
+
+border-color: inherit;
+
+}
+
+
+
+#designators th{
+
+	   
+
+}
+
+#designators th h4{
+
+	color:#FFF;
+
+	font-weight: normal;
+
+}
+
+
+
+#designators th, #designators td {
+
+padding: 5px 20px;
+
+text-align: center;
+
+vertical-align: top;
+
+border-left: 2px solid #009;    
+
+}
+
+#designators td {
+
+border-top: 2px solid #009;    
+
+}
+
+
+
+#designators td p {
+
+	font-size:.9em;
+
+}
+
+#designators td  span {
+
+	font-size:.6em;
+
+}
+
+
+
+#designators td h1{
+
+	color:#900    
+
+}
+
+#designators table caption{
+
+	margin-top:10px;
+
+	font-weight: bold;
+
+}
+
+
+
+#designators thead:first-child tr:first-child th:first-child, tbody:first-child tr:first-child td:first-child {
+
+-webkit border-radius: 15px 0 0 0;
+
+border-radius: 15px 0 0 0;
+
+}
+
+
+
+#designators thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td:last-child {
+
+-webkit border-radius: 0 0 0 15px;
+
+border-radius: 0 0 0 15px;
+
+}
+
+#dlTerm .term{
+	border:5px double #000;
+	width:100%;
+	border-collapse:collapse;	
+}
+
+
+#dlTerm .def{
+	border:1px solid #000;
+	border-collapse:collapse;
+	width:100%;
+	padding-left:5px;	
+}
+
+#dlTerm .def tr td{
+	border:1px solid #000;
+	border-radius:0 0 0 0;
+	font-weight:normal;
+	font-size:.7em;
+}
+#dlTerm .def thead td{
+	background-color: #999;
+	font-weight:bold;
+	font-size:.9em;
+	text-align:center;
+}
+
+img.alignCenter{
+
+	display:block;
+
+	margin:0 auto;
+
+	padding-top:20px;
+
+}
+
+.medium{
+
+	font-size: .8em;
+
+}
+
+.medium li{
+
+	padding-bottom: .5em;
+
+}
+
+.red{
+
+	color:red;
+
+	font-weight:bold;
+
+}
+.orange{
+	color:#F60;
+	font-weight:bold;
+	font-size:.75em;
+	padding-left:10px;
+	padding-top:10px;
+	padding-bottom:3px;
+}
+.price{
+	font-size:1.5em !important;
+	font-weight:bold;
+	color:#000 !important;
+	padding-left:30px;
+}
+#charges{
+	color:#060;
+	text-align:center;
+}
+.green{
+	color:#0C0;
+}
+.anuncio{
+	font-size:1em;
+	line-height:1.5em;
+	padding-top:10px;
+}
