@@ -1,0 +1,788 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.2.0-alpha.1.min.css">
+<link href="css/deltaStyles.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.2.0-alpha.1.min.js"></script>
+<script src="js/contact.js"></script>
+<style>
+.wrap {
+    white-space: normal !important;
+}
+
+</style>
+<title>Dlterm and Aeromexico</title>
+</head>
+
+<body>
+<div data-role="page">
+  <div data-role="header">
+    <h1>Delta</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="index.html" data-role="button" data-transition="slide">Tkt-Counter</a></li>
+        <li><a href="gate.html" data-role="button" data-transition="slide">Gate</a></li>
+        <li><a href="arrival.html" data-role="button" data-transition="slide">Arrival</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- /header -->
+  
+  <div data-role="content">
+    <img src="pictures/am_gris_final.jpg">
+<p>AeroMexico Procedures.</p>
+    <br />
+    <div data-role="collapsible-set">
+      <div class="drop_bags" data-role="collapsible">
+        <h3>Prep and Logon</h3>
+        <ul data-role="listview" data-inset="true">
+        
+        <li data-role="list-divider">
+      <h3>Logon DLTerm</h3>
+      </li>
+          <li>
+          <p class=" orange">Login on A Level for employee 123456</p>
+            <p class="term"><span class="term">LOG/A/123456</span></p>
+            <P class="wrap">LOG demand/A Level/Employee Number. </P>
+          </li>
+          
+          <li>
+          <p class="orange wrap">AQA to a Flight 8233 on September 23 from SFO to GDL</p>
+            <p><span class="term">AQA8233/23SEPSFOGDL</span></p>
+            <p class="wrap"><strong>A</strong> <strong>Q</strong>uick <strong>A</strong>ccess &lt Flight # &gt/&lt Date &gt&lt City pair &gt</p>
+          </li>
+          
+          <li>
+            <P class="orange">Back to level A</P>
+            <p><span class="term">BA</span></p>
+          </li>
+          
+          <li data-role="list-divider">
+      <h3>Sign Out DLTerm</h3>
+      </li>
+          
+          <li>
+          
+            <P class="orange">Sign out of current level</P>
+            <p><span class="term">DSO</span></p>
+            </li>
+            
+            <li>
+            <P class="orange">Sign out all agents of all levels</P>
+            <p><span class="term">DSO/ALL</span></p>
+            </li>
+            
+            <li>
+            <P class="orange">Deactivates the current level</P>
+            <p><span class="term">DSO/O</span></p>
+          </li>
+          
+          <li data-role="list-divider">
+      			<h3>Login CUTE</h3>
+      	  </li>
+            
+		  <li>
+			<p class="orange wrap">CUTE Common Use Terminal Equipment</p>
+
+			<p>1. <strong>Select AeroMexico Icon</strong></p>
+            <p>2. User ID: <strong>AM-USER</strong></p>
+            <p>3. Password: <strong>AM</strong></p>
+            </li>
+            
+            <li data-role="list-divider">
+      			<h3>Led Screen Setup</h3>
+      	  </li>
+            
+		  <li>
+			<p class="orange">Led Screen Setup</p>
+
+			<p><strong>1. Select Delta lite from Main Manu</strong></p>
+            <p><strong>2. SelectARINC FIDS Menu</strong></p>
+            <p><strong>3. Click on Counter Open</strong></p>
+            <p class="wrap"><strong>3. Populate Necessary Fields With Flight Info</strong></p>
+            </li>
+            <li>
+            <p class="orange">Position 1</p>
+            <p><strong>AEROMEXICO</strong> --[CENTER]--</p>
+            <p><strong>AM 663 GUADALAJARA</strong> --[CENTER]--</p>
+            <p><strong>AM 669 MEXICO CITY</strong> --[CENTER]--</p>
+            <p><strong>** CLUB PREMIER **</strong> --[CENTER]--</p>
+            </li>
+            <li>
+            <p class="orange">Position 2</p>
+            <p><strong>AEROMEXICO</strong> --[CENTER]--</p>
+            <p><strong>AM663/GUADALAJARA&nbsp; &nbsp; &nbsp; AM669/MEXICO CITY</strong> --[SCROLL]--</p>
+            <p><strong>WEB CHECK-IN</strong> --[CENTER]--</p>
+            <p><strong>BAG DROP-OFF</strong> --[CENTER]--</p>
+            </li>
+            <li>
+            <p class="orange">Position 3</p>
+            <p><strong>AEROMEXICO</strong> --[CENTER]--</p>
+            <p><strong>AM663/GUADALAJARA&nbsp; &nbsp; &nbsp; AM669/MEXICO CITY</strong> --[SCROLL]--</p>
+            <p><strong>CLASE TURISTA</strong> --[CENTER]--</p>
+            <p><strong>1 PZA DE MANO 10KG&nbsp; &nbsp; &nbsp; 1 CARRY-ON 22LB</strong> --[SCROLL]--</p>
+            </li>
+            <li>
+            <p class="orange">Position 4</p>
+            <p><strong>AEROMEXICO</strong> --[CENTER]--</p>
+            <p><strong>AM663/GUADALAJARA&nbsp; &nbsp; &nbsp; AM669/MEXICO CITY</strong> --[SCROLL]--</p>
+            <p><strong>CLASE TURISTA</strong> --[CENTER]--</p>
+            <p><strong>1 PZA DE MANO 10KG&nbsp; &nbsp; &nbsp; 1 CARRY-ON 22LB</strong> --[SCROLL]--</p>
+            </li>
+            <li>
+            <p class="orange">Position 5</p>
+            <p><strong>AEROMEXICO</strong> --[CENTER]--</p>
+            <p><strong>AM663/GUADALAJARA&nbsp; &nbsp; &nbsp; AM669/MEXICO CITY</strong> --[SCROLL]--</p>
+            <p><strong>CLASE TURISTA</strong> --[CENTER]--</p>
+            <p><strong>1 PZA DE MANO 10KG&nbsp; &nbsp; &nbsp; 1 CARRY-ON 22LB</strong> --[SCROLL]--</p>
+            </li>
+            <li>
+            <p class="orange">Position 6</p>
+            <p><strong>AEROMEXICO</strong> --[CENTER]--</p>
+            <p><strong>AM663/GUADALAJARA&nbsp; &nbsp; &nbsp; AM669/MEXICO CITY</strong> --[SCROLL]--</p>
+            <p><strong>CLASE TURISTA</strong> --[CENTER]--</p>
+            <p><strong>1 PZA DE MANO 10KG&nbsp; &nbsp; &nbsp; 1 CARRY-ON 22LB</strong> --[SCROLL]--</p>
+            </li>
+            <li>
+            <p class="orange">Finish</p>
+            <p>Cick <strong>Submit</strong></p>
+            </li>
+            
+          
+        </ul>
+      </div>
+      <!--end collapsible-->
+      
+      <div class="drop_bags" data-role="collapsible">
+        <h3>Simple Check-In</h3>
+        <ul data-role="listview" data-inset="true">
+          <li><h3>Step 1</h3>
+          	<p class="wrap orange">Display PNR</p>
+            <p class="wrap"><span class="term">*823331JANSFOGDL-SMITH</span> or</p>
+            <p class="wrap"><span class="term">*-SMITH</span> or</p>
+            <p class="wrap"><span class="term">*QFFY4C</span></p>
+            <p class="wrap">Review PNR with passenger to determine final destination. If passenger is connecting to another carrier and it is not in the PNR  you will need to add a 'BK' segment for the OAL space (e.g.:<span class="term"> 0AZ202Y22SEPFCOLHRBK1</span>). This will allow you to check baggage to the final destination.</p>
+            
+            <h3>Step 2</h3>
+            <p class="wrap orange">Display Electronic Ticket</p>
+            <p class="wrap"><span class="term">ETR*</span></p>
+            <p class="wrap">Examine the passenger ticket for: Correct flight date, Reservation status, Class of service and Fare.</p>
+            
+            <h3>Step 3</h3>
+            <p class="wrap orange">Check for a valid passport            </p>
+            <p class="wrap">Items to verify:<br>
+            Surname, Given Name, Photo, Date of Expiration, Passport Number, Place of Issue, Nationality.</p><br>
+            <p class="wrap">Viewing TIMATIC in DELANET:<br>
+              Click on <strong>INTL Documentation</strong><br>
+              Located under ACS Tools<br>
+            Click on <strong>TIMATIC</strong> </p>
+            
+            <h3>Step 4</h3>
+            <p class="wrap orange">Assign seat if not reserved in PNR</p>
+            <p class="wrap"><span class="term">A*C2</span></p>
+            <p class="wrap">Display seat map for segment 2. '-' displayed on a the seat map indicates the seat is available to assign.</p><br>
+            <p class="wrap"><span class="term">A*$A</span>(Aisle) <span class="term">W</span> (Window) <span class="term">21A</span>(Specific Seat)</p>
+            <p class="wrap">Example: <span class="term">A*$A</span> <span class="term">A*$W</span> <span class="term">A*$21A</span></p><br>
+            <p class="wrap"><span class="term">A*S2</span>(Segment 2) <span class="term">$</span> <span class="term">/A</span> <span class="term">/W</span><span class="term">/21A</span></p>
+            <p class="wrap">Example: <span class="term">A*S2$A</span> <span class="term">A*S2$W</span> <span class="term">A*S2$21A</span></p>
+            
+            <h3>Step 5</h3>
+            <p class="wrap orange">Add SkyMiles account number of not already entered</p>
+            <p class="wrap"><span class="term">4SSRFQTVDLHK/AM0123456789-KOONTZ/LORI</span></p>
+            <p class="wrap">Replace AM with the applicable OAL 2-letter code.</p>
+            <h3>Step 6</h3>
+ <p class="orange">Travel Documents Template</p>
+            <p class="wrap"><span class="term">PS*</span></p>
+            <p class="wrap">Scan passport or entry passenger passport info manually.</p>
+            <p class="wrap"><span class="term">PS*1.1</span> passenger No. 1</p>
+            <p class="wrap"><span class="term">PS*INF</span> for an Infant</p>
+            
+            <h3>Step 7</h3>
+            <p class="wrap orange">Display Passenger Contact Template</p>
+            <p class="wrap"><span class="term">PC*</span></p>
+            <p class="wrap">If passenger is using American passport this template will will load automatically tab to "INFORMATION DECLINED/?N" and type "Y".</p>
+ <p class="wrap">If passenger is using Mexican passport you can omit this step.</p>
+            
+            <h3>Step 8</h3>
+            <p class="wrap orange">Print Bag Tags</p>
+            <p class="wrap"><span class="term">PBT*</span></p>
+            <p class="wrap">AeroMexico bag allowence is 1 bag 50lb.</p>
+            <p class="wrap">on the template enter 1 and then enter p to print  the bag tags</p>
+            
+            <h3>Step 9</h3>
+            <p class="wrap orange">Print Boarding Pass</p>
+            <p class="wrap"><span class="term">A*B</span></p>
+            <p class="wrap">Print boarding pass and advise passenger of gate number and location.</p>
+            
+          </li>
+        </ul>
+      </div>
+      
+      <div class="drop_bags" data-role="collapsible">
+      <h3>Seats</h3>
+      <ul data-role="listview" data-inset="true">
+       <li data-role="list-divider">
+       <h3>Seat Assignment</h3>
+       </li>
+      <li>
+      <p class="wrap orange">Basic demand code </p>
+      <p class="wrap"><span class="term">A*$</span></p>
+      <p class="wrap">Basic demand code to assign a seat</p>
+      </li>
+      <li>
+      <p class="wrap orange">Assign any seats to all passengers</p>
+      <p class="wrap"><span class="term">A*$G</span></p>
+      <p class="wrap"></p>
+      </li>
+      <li>
+      <p class="wrap orange">Assign any seat to a segment 1</p>
+      <p class="wrap"><span class="term">A*S1$G</span></p>
+      <p class="wrap">A&lt;Segment #&gt;$G</p>
+      </li>
+      <li>
+      <p class="wrap orange">Assign seat 15A to segment 1</p>
+      <p class="wrap"><span class="term">A*S1$15A</span></p>
+      <p class="wrap">A*&lt;Segment 1&gt;$&lt;Seat #&gt;</p>
+      </li>
+      <li>
+      <p class="wrap orange">Assign a seat for a segment 1 name 2</p>
+      <p class="wrap"><span class="term">A*S1&yen;N2.1$&lt;Seat #&gt;</span></p>
+      <p class="wrap">A*&lt;Segment #&gt;&lt;End Item&gt;&lt;Name #&gt;$&lt;Seat #&gt;</p>
+      </li>
+      <li>
+      <p class="wrap orange">Assign Exit Row Seat 17A</p>
+      <p class="wrap"><span class="term">A*S1$17AY</span></p>
+      <p class="wrap">A*&lt;Segment 1&gt;$&lt;Seat #&gt;Y</p>
+      <p class="wrap">Add a Y to the seat assignment to denote the passenger has been advice to help on the event of an emergency.</p>
+      </li>
+      <li>
+      <p class="wrap orange">Assign multiple exit row seats</p>
+      <p class="wrap"><span class="term">A*S1$17AYBY</span></p>
+      <p class="wrap">A*&lt;Segment 1&gt;$&lt;Seat #&gt;Y&lt;2nd Seat Letter&gt;Y</p>
+      <p class="wrap">the letter Y must follow each seat assignament.</p>
+      </li>
+      <li data-role="list-divider">
+       <h3>Deleate Seats</h3>
+       </li>
+      <li>
+      <p class="wrap orange">Delete seats all segments all passengers</p>
+      <p class="wrap"><span class="term">A*$@</span></p>
+      </li>
+      <li>
+      <p class="wrap orange">Delete seats segment 2 all passengers</p>
+      <p class="wrap"><span class="term">A*S2$@</span></p>
+      <p class="wrap">A*&lt;Segment #&gt;$@</p>
+      </li>
+      <li data-role="list-divider">
+       <h3>Seat Change</h3>
+       </li>
+      <li>
+      <p class="wrap orange">Change seat segment 2 to 14B</p>
+      <p class="wrap"><span class="term">A*S2$@14B</span></p>
+      <p class="wrap">A*&lt;Segment #&gt;$@&lt;Seat #&gt;</p>
+      </li>
+      <li>
+      <p class="wrap orange">Change seat segment 2 for two passengers</p>
+      <p class="wrap"><span class="term">A*S2$@24AB</span></p>
+      <p class="wrap">A*&lt;Segment #&gt;$@&lt;Seat # 2nd seat Letter&gt;</p>
+      </li>
+      </ul>
+      </div>
+      
+      
+      
+      
+      <div class="drop_bags" data-role="collapsible">
+      <h3>Upgade Seats</h3>
+      <ul data-role="listview" data-inset="true">
+       
+      <li data-role="list-divider">
+       <h3>Upgade Seats</h3>
+       </li>
+       <li>
+       <h3>Step 1</h3>
+      <p class="wrap orange">Verify that there are available seats in First Class cabin</p>
+      <p class="wrap">You must ask Prime Agent or AeroMexico representative for availability even if the Seat Map shows empty seats.</p>
+      <h3>Step 2</h3>
+      <p class="wrap orange">Upgrade Charges</p>
+      <p class="wrap"><span class="term">MDMCO</span></p>
+      <p class="wrap">Display <strong>MDMCO</strong> template and charge<strong> $150.00 for Upgrade.</strong></p>
+      <h3>Step 3</h3>
+      <p class="wrap orange">Assign First Class Seat</p>
+      <p class="wrap">To assign seat you must be Prime or ask Prime agent to assign the seat for you.</p>
+      <p class="wrap"><span class="term">A*S1$&lt;Seat #&gt;IVJ</span></p>
+      <p class="wrap">If you took Primary to do the above entry using</p>
+      <p class="wrap"><span class="term">AQRA-P</span></p>
+      <p class="wrap">Be sure you release primary after the entry using</p>
+      <p class="wrap"><span class="term">AQRD-P</span></p>
+      <h3>Step 4</h3>
+      <p class="wrap orange">Start a regular check-in process</p>
+      <p class="wrap">Upgraded passengers have<strong> two 70lb bags allowance</strong> but you have to override the template (pre-paid) because the system will trigger the overweight template over 50lb bag.</p>
+      <h3>Step 5</h3>
+      <p class="wrap orange">No Meal</p>
+      <p class="wrap">Passenger has to sign the<strong> No Meal Waiver Form.</strong></p>
+      </li>
+     
+      </ul>
+      </div>
+      
+      
+      
+      
+      
+      <!--desde aqui-->
+      <div class="drop_bags" data-role="collapsible">
+      <h3>Bags</h3>
+      <ul data-role="listview" data-inset="true">
+      
+       <li data-role="list-divider">
+       <h3>Excess Weight Charges</h3>
+       </li>
+       <li>
+       <label for="txtWeight">Weight <span class="red">(only numbers</span>)</label>
+       <input id="txtWeight" type="number"></input>
+       <label for="txtCharges">Charges</label>
+       <button id="btnCalculate">Calculate</button>
+       <div id="charges"><h1>&nbsp;</h1></div>
+       </li>
+       
+      <li data-role="list-divider">
+       <h3>Excess Baggage Fees</h3>
+       </li>
+       <li>
+      <p class="wrap orange">2nd Bag</p>
+      <p class="wrap"><span class="price">$50.00</span></p>
+      </li>
+      <li>
+      <p class="wrap orange">3rd and 4th Bag</p>
+      <p class="wrap"><span class="price">$150.00 each</span></p>
+      </li>
+      <li>
+      <p class="wrap orange">5th - 7th Bag</p>
+      <p class="wrap"><span class="price">$200.00 each</span></p>
+      </li>
+      <li>
+      <p class="wrap orange">Oversized(62"Lx Wx H)</p>
+      <p class="wrap"><span class="price">$120.00</span></p>
+      </li>
+      <li>
+      <p class="wrap orange">Specialty/Sport Equipment</p>
+      <p class="wrap"><span class="price">$50.00</span></p>
+      </li>
+      <li>
+      <p class="wrap orange">Brazil only 3rd - 7th Bag</p>
+      <p class="wrap"><span class="price">$150.00 each</span></p>
+      </li>
+      
+       <li data-role="list-divider">
+       <h3>Void Excess Weight Charges</h3>
+       </li>
+       <li>
+       <h3>Step 1</h3>
+       <p class="wrap orange">Display Record</p>
+       <p class="wrap"><span class="term">*-&lt;Last Name&gt;/&lt;Name&gt;</span> or</p>
+       <p class="wrap"><span class="term">*RR</span></p>
+       <h3>Step 2</h3>
+       <p class="wrap orange">Display Bag Info</p>
+       <p class="wrap"><span class="term">*B$</span> </p>
+       <h3>Step 3</h3>
+       <p class="wrap orange">Scroll to find the NBR Number</p>
+       <p class="wrap">In a PNR with multiple names be sure you locate the transaction number (NBR) for the right name.</p><br>
+       <p class="wrap">Use the NBR without the starting numbers 006 with the entries bellow.</p>
+       </li>
+       <li data-role="list-divider">
+       <h3>Transaction Type</h3>
+       </li>
+       <li>
+       <p class="wrap orange">Cash Transaction</p>
+       <p class="wrap"><span class="term">BRMD&lt;NBR&gt;</span></p>
+       </li>
+       <li>
+       <p class="wrap orange">Credit Card Transaction</p>
+       <p class="wrap"><span class="term">BRVC&lt;NBR&gt;</span></p>
+       </li>
+     
+      </ul>
+      </div>
+      
+      <!--hasta aqui-->
+      
+      <div class="drop_bags" data-role="collapsible">
+      <h3>Divide a Record</h3>
+      <ul data-role="listview" data-inset="true">
+       
+      <li data-role="list-divider">
+       <h3>Devide a PNR</h3>
+       </li>
+       <li>
+       <h3>Step 1</h3>
+      <p class="wrap orange">Devide a Single Name from PNR</p>
+      <p class="wrap"><span class="term">D&lt;Name #&gt;</span></p>
+      <p class="wrap orange">Devide multiple Surnames</p>
+      <p class="wrap"><span class="term">D&lt;Name #&gt;-&lt;Name #&gt;</span></p>
+      <h3>Step 2</h3>
+      <p class="wrap orange">File PNR</p>
+      <p class="wrap"><span class="term">F</span></p>
+      <h3>Step 3</h3>
+      <p class="wrap orange">End PNR and Display the Record</p>
+      <p class="wrap"><span class="term">ER</span></p>
+      <h3>Step 4</h3>
+      <p class="wrap orange">Display Split/Divided Party in PNR</p>
+      <p class="wrap"><span class="term">*DP</span></p>
+      </li>
+     
+      </ul>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="drop_bags" data-role="collapsible">
+      <h3>Infant</h3>
+      <ul data-role="listview" data-inset="true">
+       
+      <li data-role="list-divider">
+       <h3>Add Infant</h3>
+       </li>
+       <li>
+       <h3>Step 1</h3>
+      <p class="wrap orange">Add Infant to a Specific Passenger</p>
+      <p class="wrap"><span class="term">INFT*&lt;PAX #&gt;</span></p>
+      <h3>Step 2</h3>
+      <p class="wrap orange">Fill Template</p>
+      <p class="wrap"><span class="term">Fill template and press enter</span></p>
+      <h3>Step 3</h3>
+      <p class="wrap orange">If Payment Needed</p>
+      <p class="wrap"><span class="term">MDMCO ($50.00 charge)</span></p>
+      <h3>Step 4</h3>
+      <p class="wrap orange">Enter Infant Passport Info</p>
+      <p class="wrap"><span class="term">PS*INF</span></p>
+      </li>
+     
+      </ul>
+      </div>
+      
+       <div class="drop_bags" data-role="collapsible">
+      <h3>Create a Record</h3>
+      <ul data-role="listview" data-inset="true">
+      <li data-role="list-divider">
+       <h3>Create a record</h3>
+       </li>
+      <li>
+      
+      <h3>Step 1</h3>
+      <p class="wrap orange">Enter a Name</p>
+      <p class="wrap"><span class="term">-&lt;Last Name&gt;/&lt;Name&gt;</span></p>
+      <p class="wrap">repeat this entry for each passenger on the reservation.</p>
+      <h3>Step 2</h3>
+      <p class="wrap orange">Enter Telephone No.</p>
+      <p class="wrap"><span class="term">9 SFO N/C</span></p>
+      <h3>Step 3</h3>
+      <p class="wrap orange">Long Sale</p>
+      <p class="wrap"><span class="term">0&lt;AIRLINE&gt;&lt;FLIGHT	#&gt;&lt;CLASS OF SERV.&gt;&lt;DATE&gt;&lt;CITY PAIR&gt;SB&lt;# of Pax&gt;</span></p>
+      <p class="wrap">repeat this entry for each leg on the reservation.</p>
+      <h3>Step 4</h3>
+      <p class="wrap orange">Still Printing Cupon?</p>
+      <p class="wrap"><span class="term">Repeat step 1 to 4</span></p>
+      <p class="wrap orange">Still Printing Cupon?</p>
+      <p class="wrap"><span class="term">Stamp Cupon with DOCS OK Stamp</span></p>
+      </li>
+     
+      </ul>
+      </div>
+      
+      
+      
+      
+      
+      
+      <div class="drop_bags" data-role="collapsible">
+      <h3>Exchange Cupon for a Boarding Pass</h3>
+      <ul data-role="listview" data-inset="true">
+      <li data-role="list-divider">
+       <h3>Exchange Cupon/Boarding Pass</h3>
+       </li>
+      <li>
+      
+      <h3>Step 1</h3>
+      <p class="wrap orange">Display Record</p>
+      <p class="wrap"><span class="term">*-&lt;Last Name&gt;/&lt;First Name&gt;</span> or</p>
+      <p class="wrap"><span class="term">*RR</span></p>
+      <h3>Step 2</h3>
+      <p class="wrap orange">Display e-Ticket</p>
+      <p class="wrap"><span class="term">ETR*</span></p>
+      <h3>Step 3</h3>
+      <p class="wrap orange">Print Boarding Pass</p>
+      <p class="wrap"><span class="term">A*B</span></p>
+      <h3>Step 4</h3>
+      <p class="wrap orange">Still Printing Cupon?</p>
+      <p class="wrap"><span class="term">Repeat step 1 to 4</span></p>
+      <p class="wrap orange">Still Printing Cupon?</p>
+      <p class="wrap"><span class="term">Stamp Cupon with DOCS OK Stamp</span></p>
+      </li>
+     
+      </ul>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      <div class="drop_bags" data-role="collapsible">
+      <h3>Unaccompanied Minor</h3>
+      <ul data-role="listview" data-inset="true">
+      <li>
+      	<h3>Step 1</h3>
+        	<p class="wrap orange">Notarized Letter.</p>
+            <p class="wrap">Request from the person delivering the UMNR, the Notarized Letter.<br>
+Notarized Letter must be in English and Spanish.</p>
+            
+            
+        <h3>Step 2</h3>
+            <p class="wrap orange">Distribute Forms</p>
+            <p class="wrap">Request the person delivering the UMNR to fill out the following forms:</p>
+            <p class="wrap">Unaccompanied Minor Customer Service Request, form.</p>
+            <p class="wrap">Customs form.</p>
+            <p class="wrap">If the UMNR is traveling with American passport, the Immigration form.</p>
+            
+        <h3>Step 3</h3>
+            <p class="wrap orange">Start a Check –In</p>
+            <p class="wrap"><span class="term">*-ROMERO/LUIS</span></p>
+            <p class="wrap">Locate Record.</p>
+            
+            <p class="wrap orange">Verify SSR</p>
+            <p class="wrap"><span class="term">*FX</span></p>
+            <p class="wrap">To verify that the UMNR Special Service Request is on the record.</p>
+            
+            <p class="wrap orange">Add SSR if Needed</p>
+            <p class="wrap"><span class="term">4SSRUMNRAMSS1</span></p>
+            <p class="wrap">to add SSR to the record for 1 person.</p>
+            
+            <p class="wrap orange">Verify Pre-Payment</p>
+            <p class="wrap">Verify if the UMNR service is on the Pre-Paid UMNR list provided by AeroMexico.</p>
+            <p class="wrap">If service is pre-paid skip MDMCO.</p>
+            
+            <p class="wrap orange">Payment if needed</p>
+            <p class="wrap"><span class="term">MDMCO</span></p>
+            <p class="wrap">To display Misc. Charges Order template.</p>
+            <p class="wrap">Give customer a printed receipt ($100.00 fee).</p>
+            
+            <p class="wrap orange">Bags</p>
+            <p class="wrap"><span class="term">PBT*1.1</span></p>
+            <p class="wrap">Accept bags.</p>
+            
+            <p class="wrap orange">Boarding Pass</p>
+            <p class="wrap"><span class="term">A*B</span></p>
+            <p class="wrap">Issue Boarding Pass.</p>
+            
+        <h3>Step 4</h3>
+            <p class="wrap orange">Security Clarence Card</p>
+            <p class="wrap"><span class="term">MDSCC</span></p>
+            <p class="wrap">Display a template to issue a Security Clarence Card.</p>
+            <p class="wrap">after RESON-ESCORT? enter X</p>
+            <p class="wrap">After REMARKS enter UNACCOMPAINED MINOR</p>
+            
+        <h3>Step 5</h3>
+            <p class="wrap orange">Documents Wallet</p>
+            <p class="wrap">The Documents Wallet for Unaccompanied Minor must contain the following:</p><br>
+            <p class="wrap">Notarized Form.</p>
+            <p class="wrap">Unaccompanied Minor Customer Service Request Form.</p>
+            <p class="wrap">Customs Form.</p>
+            <p class="wrap">Immigration Form if needed.</p>
+            <p class="wrap">UMNR Passport.</p>
+            <p class="wrap">Boarding Pass.</p><br>
+            <p class="wrap">The minor must wear the Documents Wallet around the neck.</p>
+      
+      
+      </li>
+      </ul>
+      </div>
+      
+      <div class="drop_bags" data-role="collapsible">
+      <h3>Special Service Request SSR</h3>
+      <ul data-role="listview" data-inset="true">
+      <li data-role="list-divider">
+       <h3>Wheelchair</h3>
+       <li>
+            <P class="orange wrap">Request Whellchair for all Names and all Segments</P>
+            <p class="wrap"><span class="term">4SSRWCHRDLSS1</span></p>
+       </li>
+       
+       <li>
+            <P class="orange wrap">Request Whellchair for Name # 1</P>
+            <p class="wrap"><span class="term">4SSRWCHRDLSS1*N1.1</span></p>
+       </li>
+       
+       <li>
+            <P class="orange wrap">Request Whellchair for Name #1 Segment #2</P>
+            <p class="wrap"><span class="term">4SSRWCHRDLSS1*N1S2</span></p>
+       </li>
+       
+       <li data-role="list-divider">
+       <h3>Pets in Cabin</h3>
+       
+       <li>
+            <P class="orange wrap">Pet in Cabin Name #1 Segment #1</P>
+            <p class="wrap"><span class="term">4SSRPETCDLSS1*S1N1.1*KITTY CAT</span></p>
+       </li>
+       
+      </ul>
+      </div>
+      
+      <div class="drop_bags" data-role="collapsible">
+      <h3>Closeout BARTS</h3>
+      <ul data-role="listview" data-inset="true">
+      <li>
+            <P class="orange wrap">Display cash on hand</P>
+            <p class="wrap"><span class="term">BR$$</span></p>
+            <p class="wrap">Press enter</p>
+      </li>
+      <li>
+            <P class="orange wrap">Start Transactions Report</P>
+            <p class="wrap"><span class="term">BOW*&lt;Date&gt;</span></p>
+            <p class="wrap">Enter CPY and press enter</p>
+      </li>
+      <li>
+            <P class="orange wrap">Display Transactions</P>
+            <p class="wrap"><span class="term">BRS*</span></p>
+            <p class="wrap">Enter CPY and press enter</p>
+      </li>
+      <li>
+            <P class="orange wrap">Update Cash on Hand</P>
+            <p class="wrap"><span class="term">BR$@</span></p>
+            <p class="wrap">Enter USD and the amount of cash on hand then press enter</p>
+            <p class="wrap">Enter CPY and press enter</p>
+      </li>
+      <li>
+            <P class="orange wrap">Finalize Report</P>
+            <p class="wrap"><span class="term">BR$F</span></p>
+            <p class="wrap">Enter CPY and press enter</p>
+      </li>
+      <li>
+            <P class="orange wrap">Prepare Envelope</P>
+            <p class="wrap">Fill out the envelope info and mark the envelope as AM</p>
+            <p class="wrap">Place inside the envelope:</p><br>
+            <p class="wrap">Printed Closeout Report</p>
+            <p class="wrap">Cupons</p>
+            <p class="wrap">Money</p>
+      </li>
+      </ul>
+      </div>
+      
+      
+      <div class="drop_bags" data-role="collapsible">
+      <h3>Phone Numbers</h3>
+      <ul data-role="listview" data-inset="true">
+      
+      <li data-role="list-divider">
+       <h3>International Terminal A Gate</h3>
+       </li>
+      <li>
+      <p class="wrap"><span class="term">9-821-4105</span></p>
+      <p class="wrap">Change last two digits with gate Number.</p>
+      </li>
+      
+          <li data-role="list-divider">
+       <h3>Aisle 8 Ticket Counter</h3>
+       </li>
+      <li>
+      <p class="wrap"><span class="term">9-821-3015</span></p>
+      <p class="wrap"><span class="term">9-821-3016</span></p>
+      <p class="wrap"><span class="term">9-821-3017</span></p>
+      <p class="wrap"><span class="term">9-821-3018</span></p>
+      <p class="wrap"><span class="term">9-821-3019</span></p>
+      </li>
+      
+      <li data-role="list-divider">
+       <h3>Aisle 9 Ticket Counter</h3>
+       </li>
+      <li>
+      <p class="wrap"><span class="term">9-821-3501</span></p>
+      <p class="wrap"><span class="term">9-821-3502</span></p>
+      <p class="wrap"><span class="term">9-821-3503</span></p>
+      <p class="wrap"><span class="term">9-821-3504</span></p>
+      <p class="wrap"><span class="term">9-821-3505</span></p>
+      </li>
+      
+      <li data-role="list-divider">
+       <h3>AeroMexico Back Office</h3>
+       </li>
+      <li>
+      <p class="wrap"><span class="term">9-821-1120</span></p>
+      <p class="wrap"><span class="term">9-821-1121</span></p>
+      <p class="wrap"><span class="term">9-821-1122</span></p>
+      </li>
+      
+      <li data-role="list-divider">
+       <h3>International Operations</h3>
+       </li>
+      <li>
+      <p class="wrap"><span class="term">9-742-7475</span></p>
+      </li>
+      
+      <li data-role="list-divider">
+       <h3>Prospect Wellchair</h3>
+       </li>
+      <li>
+      <p class="wrap"><span class="term">9-821-6207</span></p>
+      <p class="wrap"><span class="term">9-821-6208</span></p>
+      </li>
+      
+      <li data-role="list-divider">
+       <h3>Technical Support</h3>
+       </li>
+      <li>
+      <p class="wrap orange">Airport IT Help Desk</p>
+      <p class="wrap"><span class="term">9-821-HELP</span></p>
+      <p class="wrap">Menu select 3, 1, 1.</p>
+      </li>
+      
+      <li>
+      <p class="wrap orange">Delta Global</p>
+      <p class="wrap"><span class="term">1-800-692-7747</span></p>
+      </li>
+      <li>
+      <p class="wrap orange">AM Skyteam Support</p>
+      <p class="wrap"><span class="term">1-877-213-9142</span></p>
+      </li>
+      
+      <li data-role="list-divider">
+      <h3>Delta Cargo Fax</h3>
+      </li>
+      <li>
+      <p class="wrap"><span class="term">9-742-0680</span></p>
+      <p class="wrap">To fax GenDec.</p>
+      </li>
+      
+      <li data-role="list-divider">
+       <h3>Duty Free Store</h3>
+       </li>
+      <li>
+      <p class="wrap"><span class="term">9-827-4532</span></p>
+      </li>
+      
+      </ul>
+      </div><!--end collapsible--> 
+    </div> <!--end collapsible set-->    
+	</div>
+  </div> <!-- /content -->
+ 
+ 
+  
+  <div data-role="footer">
+    <h4>SFO, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dep. 125</h4>
+  </div>
+  <!-- /footer --> 
+</div>
+<!-- /page -->
+</body>
+</html>
